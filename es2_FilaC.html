@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestione delle spese di un viaggio</title>
+    </head>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <body>
+        
+    </body>
+    <script>
+        var valore = calcola_budget(500, 50, 30, 20);
+        valore = calcola_budget(400, 100, 50);
+        valore = calcola_budget(250, 70, 30);
+
+        function calcola_budget(valore){
+            valore = arguments[0]
+            for(let i=1; i<arguments; i++){
+                valore -= arguments[i]
+            }
+            alert("calolo budget rimanente: " +valore)
+        }
+    </script>
+</html>
